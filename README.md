@@ -42,6 +42,11 @@ app6
 pyinstaller --onefile --name app_6 main.py
 ```
 
+app7
+```
+pyinstaller --onefile --add-binary="style.kv:." --name app_7 main.py
+```
+
 
 ## References
 - [Including data with app](https://pyinstaller.readthedocs.io/en/v3.3.1/spec-files.html)
