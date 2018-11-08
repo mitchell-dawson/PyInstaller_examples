@@ -41,3 +41,14 @@ app6
 ```
 pyinstaller --onefile --name app_6 main.py
 ```
+
+
+## References
+- [Including data with app](https://pyinstaller.readthedocs.io/en/v3.3.1/spec-files.html)
+- [Bundling data files using onefile](https://stackoverflow.com/questions/7674790/bundling-data-files-with-pyinstaller-onefile)
+- [Using onefile](https://stackoverflow.com/questions/51455765/build-multiple-py-files-into-a-single-executable-file-using-pyinstaller)
+- [Including data with PyInstaller](https://stackoverflow.com/questions/41870727/pyinstaller-adding-data-files)
+- [Basic Kivy App](https://kivy.org/doc/stable/guide/basic.html)
+- [CSV file generator 1](https://www.mockaroo.com/)
+- [CSV file generator 2](https://onlinerandomtools.com/generate-random-csv)
+
