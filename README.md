@@ -1,5 +1,5 @@
 # PyInstaller (+Kivy) Examples
-Here are seven examples, of roughly increasing complexity, that demonstrate how to package python applications using the basic commands of [PyInstaller](https://www.pyinstaller.org/). The later examples also demonstrate how to package a basic Kivy GUI app.
+Here are seven examples, of roughly increasing complexity, that demonstrate how to package python applications using the basic commands of [PyInstaller](https://www.pyinstaller.org/). The later examples also demonstrate how to package a basic [Kivy](https://kivy.org/) GUI app.
 
 
 ## Requirements
