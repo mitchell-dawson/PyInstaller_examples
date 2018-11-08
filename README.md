@@ -13,37 +13,37 @@ Examples applications using PyInstaller
 10. Full ground truthing app
 
 
-App1 - Simplest app possible
+### App1 - Simplest app possible
 ```
 pyinstaller main.spec
 ```
 
-App2 - Import standard function
+### App2 - Import standard function
 ```
 pyinstaller --name app_2 main.py
 ```
 
-App3 - Import a function from another script
+### App3 - Import a function from another script
 ```
 pyinstaller --onefile --name app_3 main.py
 ```
 
-App4 - Include a single data file
+### App4 - Include a single data file
 ```
 pyinstaller--onefile --add-data="MOCK_DATA.csv:." --name app_4 main.py
 ```
 
-App5 - Include folders of data
+### App5 - Include folders of data
 ```
 pyinstaller --onefile --add-data "data:data" --name app_5 main.py
 ```
 
-App6 - Simple single file Kivy app 
+### App6 - Simple single file Kivy app 
 ```
 pyinstaller --onefile --name app_6 main.py
 ```
 
-App7 - Kivy app with a separate kv file
+### App7 - Kivy app with a separate kv file
 ```
 pyinstaller --onefile --add-binary="style.kv:." --name app_7 main.py
 ```
