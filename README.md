@@ -17,6 +17,7 @@ pip install numpy
 pip install pandas
 pip install cython
 pip install kivy
+(pip install dis3)
 ```
 
 ## Running the Code
@@ -38,39 +39,34 @@ pip install kivy
 
 ## Apps
 
-### App1 - Simplest app possible
+### App1 - Simplest app with standard import
 ```
-pyinstaller main.spec
-```
-
-### App2 - Import standard function
-```
-pyinstaller --name app_2 main.py
+pyinstaller --name app_1 main.py
 ```
 
-### App3 - Import a function from another script
+### App2 - Import a function from another script
 ```
-pyinstaller --onefile --name app_3 main.py
-```
-
-### App4 - Include a single data file
-```
-pyinstaller--onefile --add-data="MOCK_DATA.csv:." --name app_4 main.py
+pyinstaller --onefile --name app_2 main.py
 ```
 
-### App5 - Include folders of data
+### App3 - Include a single data file
 ```
-pyinstaller --onefile --add-data "data:data" --name app_5 main.py
-```
-
-### App6 - Simple single file Kivy app 
-```
-pyinstaller --onefile --name app_6 main.py
+pyinstaller--onefile --add-data="MOCK_DATA.csv:." --name app_3 main.py
 ```
 
-### App7 - Kivy app with a separate kv file
+### App4 - Include folders of data
 ```
-pyinstaller --onefile --add-binary="style.kv:." --name app_7 main.py
+pyinstaller --onefile --add-data "data:data" --name app_4 main.py
+```
+
+### App5 - Simple single file Kivy app 
+```
+pyinstaller --onefile --name app_5 main.py
+```
+
+### App6 - Kivy app with a separate kv file
+```
+pyinstaller --onefile --add-binary="style.kv:." --name app_6 main.py
 ```
 
 ## Expected Outcomes

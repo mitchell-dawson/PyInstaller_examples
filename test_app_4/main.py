@@ -25,13 +25,17 @@ def main():
 
     print(utils.random_array(size_tuple))
 
-    csv_path = 'MOCK_DATA.csv'
+    csv_files = ('MOCK_DATA.csv', 'MOCK_DATA2.csv')
 
-    csv_path = resource_path(csv_path)
+    csv_paths = [os.path.join('data', X) for X in csv_files] 
 
-    print("Reading data from %s" % csv_path)
+    csv_paths = [resource_path(X) for X in csv_paths]
 
-    print(utils.read_csv_data(csv_path)[:5])
+    for csv_path in csv_paths:
+
+        print("Reading data from %s" % csv_path)
+
+        print(utils.read_csv_data(csv_path)[:5])
 
 
 if __name__ == '__main__':

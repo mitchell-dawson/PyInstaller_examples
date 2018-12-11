@@ -1,6 +1,9 @@
 #!/usr/bin/env python2
 
-import numpy as np
+import utils
 
 print('hello')
-print(np.random.rand(3, 2))
+
+size_tuple = (3, 2)
+
+print(utils.random_array(size_tuple))
