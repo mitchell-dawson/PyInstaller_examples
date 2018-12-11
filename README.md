@@ -5,7 +5,8 @@ Here are seven examples, of roughly increasing complexity, that demonstrate how 
 ## Requirements
 We recommend that this code is run inside a [virtual environment](https://www.pythonforbeginners.com/basics/how-to-use-python-virtualenv/).
 
-- Python (Tested on 2.7)
+- Linux or OSX (Tested on Ubuntu 14.04 and macOS High Sierra)
+- Python (Tested on Python 2.7 and 3.4) 
 - PyInstaller
 - Numpy (To test non-standard library imports)
 - Pandas (To process a csv file)
@@ -17,7 +18,6 @@ pip install numpy
 pip install pandas
 pip install cython
 pip install kivy
-(pip install dis3)
 ```
 
 ## Running the Code
@@ -32,10 +32,8 @@ pip install kivy
     - see 'Expected output' section below
 7. Try running the app 
     - The application is found inside the newly created `dist` folder
-8. Reset the folder using `rm -r build/ & rm -r dist/ & rm *.spec`
-
-
-
+8. Reset the folder
+    - `rm -r build/ & rm -r dist/ & rm *.spec`
 
 
 ## Apps
@@ -66,8 +64,8 @@ pyinstaller --onefile --name app_5 main.py
 ```
 
 ### App6 - Kivy app with a separate kv file
-```
-pyinstaller --onefile --add-binary="style.kv:." --name app_6 main.py
+```sss
+pyinstaller --onefile --add-data="style.kv:." --name app_6 main.py
 ```
 
 ## Expected Outcomes
@@ -76,7 +74,7 @@ The commands above produce two folders and a `.spec` file:
 - The `dist` folder contains the application itself, which can now be distributed to other users
 - The `.spec` file tells PyInstaller how to process your script (see reference 2 for further info)
 
-The application can be found inside the `dist` folder
+The application can be found inside the `dist` folder, it can be run from the terminal using `./app_<num>`
 
 ## Location of Data and Binaries
 At run-time, the app will create a temporary folder to store data and binary files. The path to this folder can be accessed by the environment variable `_MEIPASS` (only at run-time).
