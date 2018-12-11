@@ -32,6 +32,7 @@ pip install kivy
     - see 'Expected output' section below
 7. Try running the app 
     - The application is found inside the newly created `dist` folder
+8. Reset the folder using `rm -r build/ & rm -r dist/ & rm *.spec`
 
 
 
@@ -51,7 +52,7 @@ pyinstaller --onefile --name app_2 main.py
 
 ### App3 - Include a single data file
 ```
-pyinstaller--onefile --add-data="MOCK_DATA.csv:." --name app_3 main.py
+pyinstaller --onefile --add-data="MOCK_DATA.csv:." --name app_3 main.py
 ```
 
 ### App4 - Include folders of data
