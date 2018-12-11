@@ -5,7 +5,7 @@ Here are seven examples, of roughly increasing complexity, that demonstrate how 
 ## Requirements
 We recommend that this code is run inside a [virtual environment](https://www.pythonforbeginners.com/basics/how-to-use-python-virtualenv/).
 
-- Linux or OSX (Tested on Ubuntu 14.04 and macOS High Sierra)
+- Linux or macOS (Tested on Ubuntu 14.04 and High Sierra)
 - Python (Tested on Python 2.7 and 3.4) 
 - PyInstaller
 - Numpy (To test non-standard library imports)
