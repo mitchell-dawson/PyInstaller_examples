@@ -64,7 +64,7 @@ pyinstaller --onefile --name app_5 main.py
 ```
 
 ### App6 - Kivy app with a separate kv file
-```sss
+```
 pyinstaller --onefile --add-data="style.kv:." --name app_6 main.py
 ```
 
